@@ -1,0 +1,34 @@
+{
+  "user": [
+    {
+      "name": "aarnav",
+      "age": 20
+    },
+    {
+      "id": "4006",
+      "name": "dilu",
+      "age": "12"
+    },
+    {
+      "id": "feef",
+      "name": "dilu",
+      "age": "12"
+    },
+    {
+      "id": "4e52",
+      "name": "ram",
+      "age": "12"
+    },
+    {
+      "id": "6254",
+      "name": "sita",
+      "age": "12"
+    }
+  ],
+  "profile": [
+    {
+      "name": "aarnav",
+      "description": "dsgsdscscsb"
+    }
+  ]
+}

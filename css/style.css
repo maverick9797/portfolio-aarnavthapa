@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -6,162 +5,162 @@
     font-family: "Poppins", sans-serif;
 }
 
-body {
-    background: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
-}
 
-
-
-header {
-    background: #4a4ff5;
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-}
-
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2rem;
-    opacity: 0.9;
-}
-
-
-
-nav {
-    background: #222;
-    padding: 10px 0;
-}
-
-nav ul {
+#hero {
+    position: relative;
+    height: 70vh;
     display: flex;
     justify-content: center;
-    list-style: none;
-    gap: 40px;
-}
-
-nav a {
+    align-items: center;
     color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: 0.3s;
+    text-align: center;
+    overflow: hidden;
 }
 
-nav a:hover {
-    color: #4a4ff5;
+#video-background {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.navbar {
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+.nav-links a:hover {
+    color: black; 
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
 }
 
 
 section {
-    width: 80%;
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 20px;
-}
-
-section h2 {
+    padding: 60px 10%;
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #4a4ff5;
+}
+
+.profile {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 15px auto;
+    object-fit: cover;
 }
 
 
-
-#about p {
-    text-align: center;
-    font-size: 1.1rem;
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
 }
 
-
-
-#projects .project {
-    background: white;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-
-#projects .project:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-.project h3 {
-    margin-bottom: 10px;
-    color: #333;
-}
-
-
-
-#contact p {
-    text-align: center;
-    font-size: 1.1rem;
-}
-
-
-
-footer {
-    background: #222;
+.skill {
+    background: black;
     color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 40px;
-    font-size: 0.9rem;
+    padding: 15px;
+    border-radius: 10px;
+}
+.skill:hover {
+    transform: translatey(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: lightblue;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 
-/* Simple Contact Form */
-#contact-form {
-    width: 100%;
-    max-width: 450px;
-    margin: 0 auto;
+form {
+    max-width: 420px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-#contact-form input,
-#contact-form textarea {
+input, textarea {
     padding: 10px;
-    border: 1px solid #bbb;
-    border-radius: 6px;
-    font-size: 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
 }
 
-#contact-form input:focus,
-#contact-form textarea:focus {
-    border-color: #4a4ff5;
-}
-
-#contact-form button {
+button {
     padding: 10px;
-    background: #4a4ff5;
+    background: black;
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
-    transition: 0.2s;
 }
 
-#contact-form button:hover {
-    background: #3a3ed5;
-}
-.profile-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 15px auto;
-    border: 2px solid #4a4ff5;
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
 
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 40px;
+        background: rgba(0,0,0,0.8);
+        padding: 20px;
+        border-radius: 10px;
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
